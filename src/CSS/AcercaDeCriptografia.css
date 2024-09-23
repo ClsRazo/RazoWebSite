@@ -1,0 +1,115 @@
+.acerca-criptografia {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .columna {
+    overflow-y: auto;
+    text-align: justify;
+    flex: 1;
+    margin: 0 1.5rem;
+    margin-top: -15px;
+    height: 90vh;
+  }
+  
+  .columna h2 {
+    font-size: 1.5rem;
+    color: var(--morado-oscuro);
+  }
+  .columna h3 {
+    /* font-size: 1.5rem; */
+    color: var(--morado-oscuro);
+  }
+  .textDer {
+    /* font-size: 1.5rem; */
+    text-align: right;
+  }
+  
+  .columna p {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+    color: var(--gris-texto);
+  }
+  
+  .video-placeholder {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    background-color: var(--morado-claro);
+    margin-top: 4.1rem;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-right: 5px solid #65019ff4;
+    border-bottom: 5px solid #65019ff4;
+  }
+  .imagen-placeholder {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    background-color: var(--morado-claro);
+    margin-top: 4.1rem;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-right: 5px solid #65019ff4;
+    border-bottom: 5px solid #65019ff4;
+  }
+
+  .imagen-placeholder2{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    background-color: var(--morado-claro);
+    margin-top: 1rem;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-right: 5px solid #65019ff4;
+    border-bottom: 5px solid #65019ff4;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagen-placeholder::after, .video-placeholder::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 5px solid var(--morado-oscuro);
+    border-bottom: 5px solid var(--morado-oscuro);
+  }
+
+  /* media querie para abajo de 700 pixeles */
+@media (max-width: 700px) {
+    .acerca-criptografia {
+        flex-direction: column;
+    }
+    .columna {
+        margin: 0;
+        margin-top: 1rem;
+        height: auto;
+    }
+    .video-placeholder {
+        width: 70%;
+        height: 200px;
+        margin-top: 0;
+    }
+    .imagen-placeholder {
+        width: 60%;
+        height: 220px;
+        margin-top: 0;
+    }
+    .imagen-placeholder2 {
+        width: 40%;
+        height: 250px;
+        margin-top: 0;
+    }
+}
+  
